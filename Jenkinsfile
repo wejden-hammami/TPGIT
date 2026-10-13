@@ -17,11 +17,10 @@ pipeline {
                 sh 'java -cp out application.Test'
             }
         }
-         stage('display message') {
+        stage('Display message') {
             steps {
-                sh 'Hello from github'
+                sh 'echo "Hello from github"'
             }
         }
-        
     }
 }
